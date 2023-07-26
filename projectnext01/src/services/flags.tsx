@@ -7,7 +7,7 @@ const flagsService = {
         const url = `https://restcountries.com/v3.1/name/${name}`
         console.log("url", url);
         const resp = await instance.get(url);
-        console.log("data", resp.data[0])
+        console.log("flags", resp);
 
         return resp.data;
     }

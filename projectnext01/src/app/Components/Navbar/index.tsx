@@ -1,6 +1,10 @@
+"use client"
+
+
 import React from 'react'
 
 import tw from "tailwind-styled-components"
+import Search from '../Search';
 
 const Nav = tw.nav`
     bg-red-900
@@ -18,11 +22,12 @@ const NavContainer = tw.div`
 
 `;
 
+
 function Navbar() {
     return (
         <Nav>
             <NavContainer className='px-16 flex'>
-
+                <Search />
             </NavContainer>
         </Nav>
     )
